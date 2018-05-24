@@ -1,0 +1,31 @@
+<!--
+  Generated template for the IssuedPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>issued</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <ion-searchbar></ion-searchbar> -->
+    <ion-list *ngFor='let book of books;let i=index'>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://marketplace.canva.com/MACBTyJGXXY/1/0/thumbnail_large/canva-purple-paint-strokes-abstract-art-creativity-book-cover-MACBTyJGXXY.jpg">            
+        </ion-thumbnail>
+        <h2>{{book.name}}</h2>
+        <h3>{{book.author}}</h3>
+        <button (click)='onReturn(book)' ion-button  item-end>Return</button>
+      </ion-item>
+    </ion-list>
+       
+        
+                  
+</ion-content>

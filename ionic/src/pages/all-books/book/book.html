@@ -1,0 +1,65 @@
+<!--
+  Generated template for the BookPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>book</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- Name: {{book.name}} <br>
+  Author: {{book.author}} <br>
+  Desription: {{book.description}} <br>
+
+
+  <button display-inline ion-button large color="warning" (click)="signIn()" >Edit</button>
+  <button display-inline ion-button large color="danger" (click)="signIn()" >Delete</button>   -->
+  <ion-card>
+
+    <img src="https://images.unsplash.com/photo-1421338443272-0dde2463976a?ixlib=rb-0.3.5&s=3dcc426ae786e1147f711821ef382efa&dpr=1&auto=format&fit=crop&w=525&q=60">
+    <!-- <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab> -->
+  
+    <ion-item>
+      <ion-icon name="football" item-start large></ion-icon>
+      <h2>Name: </h2>
+      <!-- <h4>Author: {{book.author}}</h4> -->
+      <p>{{book.name}}</p>
+    </ion-item>
+  
+    <ion-item>
+      <ion-icon name="wine" item-left large ></ion-icon>
+      <h2>Author: </h2>
+      <p>{{book.author}}</p>
+    </ion-item>
+    <ion-card-content>
+      <!-- <ion-icon name="wine" item-left large ></ion-icon> -->
+      <h2>Description: </h2>
+      <p>{{book.description}}</p>
+    </ion-card-content>
+  
+    <ion-item>
+      <span item-left>
+        <button display-inline ion-button medium color="warning" (click)="OnEdit()" >Edit</button>
+      </span>
+      <span item-right>
+        <button display-inline ion-button medium color="danger" (click)="onDeleteBook()" >Delete</button>
+      </span>
+      <!-- <button ion-button icon-left clear item-end>
+        <ion-icon name="navigate"></ion-icon>
+        Start
+      </button> -->
+    </ion-item>
+  
+  </ion-card>
+</ion-content>

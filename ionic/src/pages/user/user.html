@@ -1,0 +1,23 @@
+<!--
+  Generated template for the UserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>user<span style="float:right" (click)='logout()'>Logout</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-tabs>
+    <ion-tab [root]="chatRoot" [rootParams]="chatParams" tabTitle="Available" tabIcon="list-box"></ion-tab>
+    <ion-tab [root]="chat"     [rootParams]="chatParams" tabTitle="Issued"    tabIcon="albums"></ion-tab>
+    <ion-tab [root]="chat1"    [rootParams]="chatParams" tabTitle="Profile"   tabIcon="person"></ion-tab>
+   </ion-tabs>
+
+</ion-content>

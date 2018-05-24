@@ -1,0 +1,39 @@
+<!--
+  Generated template for the CreateEditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>createEdit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <h4>editMode: {{editMode}} </h4> -->
+    <ion-list>
+        <ion-item>
+          <ion-label color="primary" floating >Book Name</ion-label>
+          <ion-input type="text" #bookname></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" floating >Author Name</ion-label>
+            <ion-input type="text" #author></ion-input>
+        </ion-item>
+        <ion-item>
+              <ion-label color="primary" floating >No. of Copies</ion-label>
+              <ion-input type="text" #copies></ion-input>
+        </ion-item>
+        <ion-item style="height:40%">
+            <ion-label color="primary" floating >Description</ion-label>
+            <ion-textarea type="text" #description></ion-textarea>
+        </ion-item>
+      </ion-list>
+      <button (click)="onSubmit()" display-inline ion-button color="secondary" >Submit</button>
+      <button float-right ion-button color="yellow" (click)="onCancel()" >Cancel</button>
+      
+</ion-content>
